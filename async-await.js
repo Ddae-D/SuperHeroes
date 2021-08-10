@@ -1,4 +1,5 @@
 //practica superheroes
+//practica de test de conocimientos js
 const heroe = [
     {
         id:1,
