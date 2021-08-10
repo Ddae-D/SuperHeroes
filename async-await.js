@@ -64,7 +64,7 @@ const getHeroe = ( id ) =>{
 const getHabilidad = ( id )=>{
     return new Promise((resolve, reject)=>{
         const habilidad = habilidades.find((h) => h.id === id);
-        (habilidad)?resolve(habilidad.habilidad):reject(`Habilidades no encontradas para el usuario con id ${id}`);
+        (habilidad)?resolve(habilidad.habilidad):reject(`Habilidades no encontradas para el superheroe con id ${id}`);
     });
 }
 
@@ -78,7 +78,7 @@ const getInfoSuperHeroe = async () =>{
         for(let hab in habilidad){
             arrayHabilidad.push(`${habilidad[hab]}`);
         }
-        arrayHabilidad.join(',');
+        //arrayHabilidad.join(',');
         return `El superheroe ${heroe} tiene las siguientes habilidades: ${arrayHabilidad}`;
     } catch (error) {
         throw error;
